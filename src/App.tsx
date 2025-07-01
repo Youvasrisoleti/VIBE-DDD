@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Achievements from './pages/Achievements';
 import Learning from './pages/Learning';
 import Profile from './pages/Profile';
+import Gamify from './pages/Gamify';
 import AuthModal from './components/auth/AuthModal';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import { useAuth } from './hooks/useAuth';
@@ -94,6 +95,11 @@ function AppContent() {
               <Route path="learning" element={
                 <ProtectedRoute>
                   <Learning />
+                </ProtectedRoute>
+              } />
+              <Route path="gamify" element={
+                <ProtectedRoute>
+                  <Gamify />
                 </ProtectedRoute>
               } />
               <Route path="profile" element={
