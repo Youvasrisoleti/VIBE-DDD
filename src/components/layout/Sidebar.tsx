@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Trophy, BookOpen, User } from 'lucide-react';
+import { LayoutDashboard, Trophy, BookOpen, User, Gamepad2 } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import { useUser } from '../../context/UserContext';
 import Avatar from '../ui/Avatar';
@@ -13,6 +13,7 @@ const Sidebar = () => {
     { path: '/', icon: <LayoutDashboard size={20} />, label: 'Dashboard' },
     { path: '/learning', icon: <BookOpen size={20} />, label: 'Learning' },
     { path: '/achievements', icon: <Trophy size={20} />, label: 'Achievements' },
+    { path: '/gamify', icon: <Gamepad2 size={20} />, label: 'Gamify' },
     { path: '/profile', icon: <User size={20} />, label: 'Profile' },
   ];
 
